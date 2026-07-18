@@ -1,7 +1,7 @@
 from app.core.database import Base, engine
 
-import app.models
+from app.models.incident import IncidentEvent
 
 Base.metadata.create_all(bind=engine)
 
-print("Database tables created successfully!")
+print("Tables created successfully!")

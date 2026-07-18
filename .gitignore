@@ -2,25 +2,22 @@
 __pycache__/
 *.pyc
 .venv/
+venv/
 
 # Environment
 .env
+backend/.env
 
-# Node
-node_modules/
-
-# IDE
+# VS Code
 .vscode/
-.idea/
 
-# Logs
-*.log
+# Database
+*.db
+
+# Alembic cache
+.mypy_cache/
+.pytest_cache/
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Build
-dist/
-build/
-coverage/
