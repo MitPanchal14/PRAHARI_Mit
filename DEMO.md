@@ -8,7 +8,11 @@
 
 Open `http://localhost:3000/check`.
 
-Point out the live privacy meter: on-device analysis, `0 B` evidence uploaded, and no stored audio.
+Select **Protect me during a call** and click **Run live demo**. Point out that the transcript grows while the call continues, the five scam phases update live, and PRAHARI interrupts as soon as Mit's risk threshold becomes critical - before a payment request is reached.
+
+Show the privacy bar: `0 B` evidence uploaded and nothing shared with PRAHARI. Explain the two capture choices: Fast mode gives instant browser speech with a visible vendor-processing warning; Private mode uses local Whisper segments and keeps microphone audio on the device.
+
+Click **Check another call or message**, select **Paste a message**, and paste:
 
 Paste:
 
@@ -16,9 +20,7 @@ Paste:
 This is CBI officer Sharma. A parcel containing narcotics was booked under your Aadhaar at Mumbai customs. You are under digital arrest. Do not tell your family. Transfer Rs.85,000 to cbi.verify@upi immediately or we will arrest you.
 ```
 
-Click `Check Now`. Show that Mit's deterministic pass produces a private local result first. Then use `Share selected evidence`. The consented backend analysis reuses `cbi.verify@upi`, creates one incident and audit record, ingests it automatically, and attaches it to the seeded ring.
-
-Open the `Live` tab, prepare the cached Whisper model, then record a short speakerphone segment. Explain that WebGPU is used when available and WebAssembly is the fallback; the model download is separate from evidence upload and microphone audio stays in browser memory.
+Click **Check if this is a scam**. Show that Mit's deterministic pass produces a private local result first. Then open **Help warn other people (optional)** and use **Share selected evidence**. The consented backend analysis reuses `cbi.verify@upi`, creates one incident and audit record, ingests it automatically, and attaches it to the seeded ring.
 
 Before sharing, select the 24-hour retention option. After consent, show the byte counter and download the consent receipt.
 
@@ -53,7 +55,7 @@ Point out that the evidence package says it is for law-enforcement review, not a
 
 ## 2:45 - Close
 
-"The prototype closes the loop: citizen warning, structured report, graph clustering, and officer prioritization. Synthetic and simulated pieces are clearly labelled, and the system can run without an LLM key for the demo."
+"PRAHARI stops the scam before the money moves, keeps the citizen's evidence private until they consent, and turns approved evidence into shared fraud-ring intelligence for officers. The system remains useful even when the LLM or internet is unavailable."
 
 ## Simulated vs Real
 
